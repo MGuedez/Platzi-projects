@@ -21,3 +21,21 @@ body {
     font-weight: 300;
     color: var(--text-color);
 }
+
+/* -----------------header---------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding-right: 3rem;
+    z-index: 1;
+    box-shadow: var(--box-shadow-color);
+}
+
+.wrapper-img-header {
+    margin: 0;
+}
+
+.wrapper-img-header img {
+    width: 280px;
+}
