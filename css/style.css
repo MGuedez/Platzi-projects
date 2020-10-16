@@ -39,3 +39,27 @@ body {
 .wrapper-img-header img {
     width: 280px;
 }
+
+.container-menu-items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 5rem;
+    color: var(--title-color);
+}
+
+.menu,
+.container-menu-items,
+.menu-item,
+.menu-item a {
+    height: inherit;
+}
