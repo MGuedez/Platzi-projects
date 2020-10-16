@@ -1,0 +1,23 @@
+:root {
+    --main-font:'Roboto', sans-serif;;
+    --background-color: #fbfbfe;
+    --text-color:#4c4c4c;
+    --title-color:#000;
+    --secondary-text-color:#fff;
+    --secondaty-color:#92ca3d;
+    --box-shadow-color: 0px 0px 5px 0px rgba(212,212,212,1);
+    --border-radios: 1rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: var(--text-color);
+}
