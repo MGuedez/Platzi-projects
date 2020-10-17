@@ -22,12 +22,23 @@ body {
     color: var(--text-color);
 }
 
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    border: 1px solid red;
+}
+
 /* -----------------header---------------- */
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
-    padding-right: 3rem;
+    padding: 0 3rem;
     z-index: 1;
     box-shadow: var(--box-shadow-color);
 }
@@ -37,7 +48,7 @@ body {
 }
 
 .wrapper-img-header img {
-    width: 280px;
+    width: 200px;
 }
 
 .container-menu-items {
@@ -62,4 +73,52 @@ body {
 .menu-item,
 .menu-item a {
     height: inherit;
+}
+
+/* ---------------Main section HERO--------------- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+}
+
+.name-logo-hero {
+    margin: 0;
+}
+
+.name-logo-hero img {
+    width: 350px;
+}
+
+.title-hero {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.text-description-hero {
+    font-size: 2rem;
+}
+
+.title-hero {
+    margin: 2rem 0;
+}
+
+.text-description-hero {
+    margin: 0;
+}
+
+.name-logo-hero,
+.title-hero,
+.text-description-hero {
+    text-align: center;
+}
+
+.hero-image {
+    margin: 0;
+    object-fit: cover;
+}
+
+.hero-image img {
+    width: 480px;
 }
