@@ -29,7 +29,7 @@ body {
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 /* -----------------header---------------- */
@@ -410,3 +410,33 @@ input[type="radio"] {
     background-color: #00874d;
 }
 
+/* .portfolio-menu {
+    grid-area: menu;
+} */
+
+.portfolio-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.portfolio-menu input[type="radio"] {
+    display: none;
+}
+
+.portfolio-menu label {
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: .8rem 1.7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.portfolio-menu label:hover {
+    color: var(--secondaty-color);
+}
+
+.portfolio-menu input[type="radio"]:checked + label {
+    font-weight: 600;
+    background-color: var(--secondaty-color);
+    color: #fff;
+}
