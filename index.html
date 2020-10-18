@@ -6,7 +6,11 @@
     <title>Platzi Projects</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- favicon -->
     <link rel="shortcut icon" href="./Images/icon-platzi.png" type="image/x-icon">
+    <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -48,7 +52,178 @@
             </figure>
         </section>
     </section>
-    <section>portafolio</section>
+    <section class="portfolio" id="portfolio">
+        <section class="container">
+            <h2 class="title-projects">Proyectos</h2>
+            <div class="projects-main-menu">
+                <div id="app-cover" class="app-cover">
+                    <div class="select-box">
+                        <input type="checkbox" id="options-view-button">
+                    <div id="select-button" class="select-button">
+                    <div id="selected-value">
+                        <span>Proyecto por escuela</span>
+                    </div>
+                    <div id="chevrons">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                    <div id="options">
+                        <div class="option">
+                            <input class="s-c top" type="radio" name="school" value="web-development">
+                            <input class="s-c bottom" type="radio" name="school" value="web-development">
+                            <i class="fas fa-laptop-code"></i>
+                            <span class="label">Desarrollo web</span>
+                            <span class="opt-val">Desarrollo web</span>
+                        </div>
+                        <div class="option">
+                            <input class="s-c top" type="radio" name="school" value="frontend-architecture">
+                            <input class="s-c bottom" type="radio" name="school" value="frontend-architecture">
+                            <i class="fas fa-code"></i>
+                            <span class="label">Arquitectura frontend</span>
+                            <span class="opt-val">Arquitectura frontend</span>
+                        </div>
+                        <div id="option-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="portfolio-menu">
+                    <li>
+                        <input type="radio" name="categories" id="all" checked>
+                        <label for="all">Todos</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="categories" id="html">
+                        <label for="html">Html/Css</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="categories" id="javascript">
+                        <label for="javascript">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="categories" id="framework">
+                        <label for="framework">Framework</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="categories" id="animations">
+                        <label for="animations">Animaciones</label>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <section class="fulfilled-projects">
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/position_css.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de posicionamiento con etiqueta position CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Card jugador Robert Lewandowski</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/tienda-bayern.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de crear un layout con las etiquetas position y display CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Tienda FC Bayern Munich</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/position_css.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de posicionamiento con etiqueta position CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Card jugador Robert Lewandowski</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/tienda-bayern.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de crear un layout con las etiquetas position y display CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Tienda FC Bayern Munich</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/position_css.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de posicionamiento con etiqueta position CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Card jugador Robert Lewandowski</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/tienda-bayern.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de crear un layout con las etiquetas position y display CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Tienda FC Bayern Munich</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/position_css.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de posicionamiento con etiqueta position CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Card jugador Robert Lewandowski</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/tienda-bayern.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de crear un layout con las etiquetas position y display CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Tienda FC Bayern Munich</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+                <article class="project-wrapper">
+                    <figure class="project-figure">
+                        <img src="./images/position_css.png" alt="">
+                        <div class="text-hover">
+                            <a href="#modal" class="open-modal">Desafío de posicionamiento con etiqueta position CSS</a>
+                        </div>
+                    </figure>
+                    <div class="text-link-wrapper">
+                        <p class="project-name">Card jugador Robert Lewandowski</p>
+                        <a href="" class="project-link-btn">Ir</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </section>
     <section>certificados</section>
     <section>contacto</section>
     <footer>footer</footer>
