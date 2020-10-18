@@ -551,3 +551,129 @@ input[type="radio"] {
     background-color: var(--secondaty-color);
     box-shadow: var(--box-shadow-color);
 }
+
+/* -----------Modal------------ */
+/* --------------title subtitle popup-------------- */
+.container-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+}
+
+.popup {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:"text button"
+                        "image description";
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 85vw;
+    max-height: 90vh;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.information-popup {
+    grid-area: text;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.information-popup h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.information-popup p {
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.information-popup p a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--secondaty-color);
+}
+
+.information-popup p a img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.implemented-tools,
+.date-elaboration {
+    display: block;
+}
+
+.implemented-tools p,
+.date-elaboration p {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.implemented-tools .fa-tools,
+.date-elaboration .fa-calendar-alt {
+    font-size: 2rem;
+    vertical-align: middle;
+    color: var(--secondaty-color);
+}
+
+/* ----------button page------------ */
+.btn-page {
+    grid-area: button;
+    justify-self: flex-end;
+    width: 8rem;
+    height: 1.8rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+    color: var(--secondary-text-color);
+    background-color: var(--secondaty-color);
+}
+
+/* ------------imges popup------------- */
+.image-popup {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.image-popup img {
+    width: inherit;
+    height: inherit;
+}
+
+/*------------description project popup--------------- */
+.text-description-popup {
+    grid-area: description;
+    font-size: 1.8rem;
+}
+
+.text-description-popup h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* ----------Certificate course popup---------- */
+.additional-information h3{
+    margin-bottom: 2rem;
+}
+
+.additional-information a img {
+    width: 250px;
+    height: auto;
+}
