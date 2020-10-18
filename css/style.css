@@ -129,14 +129,25 @@ body {
 /* -------------------Projects-------------------- */
 .portfolio {
     position: relative;
+    background-color: var(--background-color);
+}
+
+.title-projects {
+    font-size: 2.5rem;
+    padding-left: 2.5rem;
+    margin: 0;
+    padding: 2rem;
 }
 
 .projects-main-menu {
-    height: 8rem;
+    height: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    box-shadow: var(--box-shadow-color);
 }
 
 /* -------select-box------- */
@@ -456,13 +467,16 @@ input[type="radio"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 7rem;
+    grid-row-gap: 3rem;
 }
 
 .project-wrapper {
     width: 277.984px;
     height: 156.359px;
+    padding: 1rem 1rem 5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(212,212,212,1);
 }
 
 .project-figure {
