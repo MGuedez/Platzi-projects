@@ -577,7 +577,7 @@ input[type="radio"] {
     padding: 2rem;
     border-radius: var(--border-radius);
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .information-popup {
@@ -676,4 +676,21 @@ input[type="radio"] {
 .additional-information a img {
     width: 250px;
     height: auto;
+}
+
+/* --------button close popup-------- */
+.btn-close-popup {
+    position: absolute;
+    top: .2rem;
+    right: 6rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    color: var(--secondary-text-color);
+    background-color: red;
 }
