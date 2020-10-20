@@ -988,12 +988,17 @@ input[type="radio"] {
     }
 
 /* ------------certificates----------- */
-.slider {
-    height: 230px;
-}
+    .slider {
+        height: 230px;
+    }
 
 .img-slider {
         width: 271px;
         height: 172px;
     }
+
+/* ----------Footer---------- */
+}
+.footer h3 {
+    font-size: 1.3rem;
 }
