@@ -859,6 +859,24 @@ input[type="radio"] {
 }
 
 @media screen and (max-width:767px) {
+    /* ------------hero-------------- */
+    .hero {
+        margin: 8rem 0 5rem;
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .description-hero {
+        padding: 0 5rem;
+    }
+
+    .text-description-hero {
+        font-size: 1.8rem;
+    }
+
     /* ---------Header--------- */
     .header {
         display: block;
@@ -928,6 +946,19 @@ input[type="radio"] {
 }
 
 @media screen and (max-width:480px) {
+    /* -----------hero---------- */
+    .name-logo-hero img {
+        width: 300px;
+    }
+
+    .title-hero {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 385px;
+    }
+
     /* ---------menu projects---------- */
     .projects-main-menu {
         justify-content: space-between;
@@ -975,6 +1006,26 @@ input[type="radio"] {
 }
 
 @media screen and (max-width:320px) {
+    /* -----------hero---------- */
+    .description-hero {
+        padding: 0 2rem;
+    }
+
+    .name-logo-hero img {
+        width: 100%;
+    }
+
+    .title-hero {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+    .hero-image img {
+        width: 100%;
+    }
+
     /* -----------fulfilled projects------------- */
     .fulfilled-projects {
         margin: 0;
@@ -998,7 +1049,7 @@ input[type="radio"] {
     }
 
 /* ----------Footer---------- */
-}
 .footer h3 {
     font-size: 1.3rem;
+    }
 }
