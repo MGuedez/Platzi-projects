@@ -770,6 +770,7 @@ input[type="radio"] {
 /* -----------------Contact------------- */
 .contact {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
@@ -816,3 +817,15 @@ input[type="radio"] {
 }
 
 /* ---------------icons social-------------- */
+.fa-twitter:before,
+.fa-github::before {
+    font-size: 5rem;
+    margin-left: 2rem;
+    color: var(--secondaty-color);
+}
+
+.icon-platzi {
+    width: 4.8rem;
+    margin-left: 2rem;
+    vertical-align: bottom;
+}
