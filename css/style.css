@@ -709,3 +709,60 @@ input[type="radio"] {
     color: var(--secondary-text-color);
     background-color: red;
 }
+
+/* ---------------Certificates---------------- */
+.certificates {
+    padding: 2rem 0;
+    background-color: var(--background-color);
+
+}
+
+.slider-wrapper {
+    padding: 0 0 10px;
+}
+
+.slider {
+    display: flex;
+    height: 250px;
+    margin: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+}
+
+.img-slider {
+    flex-shrink: 0;
+    display: block;
+    width: 341px;
+    height: 192px;
+    margin-right: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 250ms all;
+}
+
+.img-slider:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+
+.slider::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    border-radius: 10px;
+    background-color: var(--secondaty-color);
+}
+
+.slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slider-wrapper:hover .slider::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
