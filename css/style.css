@@ -766,3 +766,66 @@ input[type="radio"] {
 .slider-wrapper:hover .slider::-webkit-scrollbar-thumb {
     visibility: visible;
 }
+
+/* -----------------Contact------------- */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* --------------Form--------------- */
+.email-contact {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.email-contact h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.email-contact input {
+    display: block;
+    width: 275px;
+    height: 32px;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    box-shadow: var(--box-shadow-box);
+
+}
+
+.email-contact button {
+    width: 120px;
+    height: 35px;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #eee;
+    color: var(--secondary-text-color);
+    background-color: var(--secondaty-color);
+    box-shadow: var(--box-shadow-box);
+}
+
+/* ---------------icons social-------------- */
+.fa-twitter:before,
+.fa-github::before {
+    font-size: 5rem;
+    margin-left: 2rem;
+    color: var(--secondaty-color);
+}
+
+.icon-platzi {
+    width: 4.8rem;
+    margin-left: 2rem;
+    vertical-align: bottom;
+}
