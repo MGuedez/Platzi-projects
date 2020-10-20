@@ -915,6 +915,16 @@ input[type="radio"] {
     .slider-wrapper {
         margin: 0 2.5rem;
     }
+
+/* --------contact---------- */
+    .email-contact {
+        padding-left: 3rem;
+    }
+
+    .social-icons {
+        padding-right: 3rem;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -936,6 +946,31 @@ input[type="radio"] {
     .project-wrapper {
         width: 377.984px;
         height: 256.359px;
+    }
+
+/* ------------Contact------------ */
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-contact {
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        padding-right: 0;
+    }
+
+    .fa-twitter:before,
+    .fa-github::before {
+        font-size: 3.5rem;
+    }
+
+    .icon-platzi {
+        width: 3.3rem;
     }
 }
 
