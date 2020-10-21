@@ -42,7 +42,6 @@ body {
     flex-wrap: wrap;
     height: 70px;
     padding: 0 3rem;
-    z-index: 1;
     box-shadow: var(--box-shadow-color);
 }
 
@@ -80,6 +79,10 @@ body {
 .menu-item,
 .menu-item a {
     height: inherit;
+}
+
+.checkbox {
+    display: none;
 }
 
 /* ---------------Main section HERO--------------- */
@@ -859,6 +862,98 @@ input[type="radio"] {
 }
 
 @media screen and (max-width:767px) {
+    /* ---------header------------ */
+    .header {
+        display: block;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .wrapper-img-header {
+        text-align: center;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        top: 8.4rem;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        transition: all .5s;
+        background-color: #fff;
+    }
+
+    .fa-bars:before {
+        font-size: 2rem;
+        }
+
+    .btn-label {
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    .header-button {
+        width: 2rem;
+        height: .2rem;
+        position: absolute;
+        top: 3.9rem;
+        left: 2rem;
+        transition: all .2s;
+        background: #000;
+    }
+    .header-button::before,
+    .header-button::after {
+        content: "";
+        width: 2rem;
+        height: .2rem;
+        position: absolute;
+        top: -.6rem;
+        transition: all .2s;
+        background: #000;
+    }
+
+    .header-button::after {
+        top: .6rem;
+    }
+
+    .checkbox:checked ~ .header .container .menu {
+        background: #fff;
+        left: 0;
+    }
+
+    .checkbox:checked + .header label .header-button {
+        background: none;
+    }
+
+    .checkbox:checked + .header label .header-button::before {
+        transform: rotate(35deg);
+        top: 0;
+    }
+
+    .checkbox:checked + .header label .header-button::after {
+        transform: rotate(-35deg);
+        top: 0;
+    }
+
+
+    .container-menu-items {
+        display: initial;
+    }
+
+    .menu-item {
+        height: 5rem;
+    }
+
+    .menu-item a {
+        padding-left: 0;
+        justify-content: center;
+    }
+
     /* ------------hero-------------- */
     .hero {
         margin: 8rem 0 5rem;
@@ -878,16 +973,7 @@ input[type="radio"] {
     }
 
     /* ---------Header--------- */
-    .header {
-        display: block;
-        height: auto;
-    }
-
-    .wrapper-img-header {
-        text-align: center;
-    }
-
-    .container-menu-items {
+    /* .container-menu-items {
         display: initial;
     }
 
@@ -898,7 +984,7 @@ input[type="radio"] {
     .menu-item a {
         padding-left: 0;
         justify-content: center;
-    }
+    } */
 
     /* ---------Projects---------- */
     /* ---------menu projects----------- */
